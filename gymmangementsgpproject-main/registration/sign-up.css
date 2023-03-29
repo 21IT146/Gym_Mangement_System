@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.bg-image {
+    background:url("img.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+}
+.bg-image:after{
+    position:absolute;
+    content: "";
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.174) ;
+}
+.content {
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 370px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.140); 
+}
+.content header {
+    color: rgb(105, 40, 40);
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.content header:hover {
+    color:#7741fd;
+    transition: 0.5s;
+}
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.field span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+.field input{
+    height:100%;
+    width:100%;
+    background: transparent ;
+    border: none;
+    outline:none;
+    color:#222;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.show{
+    margin-top: 2px; 
+}
+.show{
+    position: absolute;
+    right: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color:#222;
+    display:none;
+    cursor:pointer;
+    font-family: "montserrat", sans-serif;
+}
+ .pass-key{ /*pass-key:valid ~ .show */
+    display:block;
+}
+.pass{
+    text-align: left;
+    margin:10px 0;
+    
+}
+.pass a {
+    color: black;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.pass:hover a{
+    text-decoration: underline;
+}
+
+.field input[type="submit"]{
+    background-color: #682efc;
+    border: 1px solid #7741fd;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: .3s ease;
+}
+.field input[type="submit"]:hover {
+    background: #4a0de4f5;
+    font-size: large;
+}
+.login{
+    color:white;
+    margin: 20px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+i span{
+    margin-left: 8px; 
+     font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
